@@ -1,3 +1,6 @@
+//  To use this it must be put into your newly created 'digitalWriteFaster' folder in 
+//  your 'libraries' folder along with digitalWriteFaster.h
+
 #include "WProgram.h"
 #include "digitalWriteFaster.h"
 
