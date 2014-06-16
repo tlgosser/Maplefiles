@@ -380,7 +380,7 @@ typedef unsigned int uint32_t;
     BB_PERIPHERAL(GPIOC_ODR,  14),         //  D22        
     BB_PERIPHERAL(GPIOC_ODR,  15),         //  D23     
     BB_PERIPHERAL(GPIOB_ODR,  9),          //  D24 
-    BB_PERIPHERAL(-1,  -1),                //  D25      	       
+    BB_PERIPHERAL(GPIOD_ODR, 2),           //  D25 	       
     BB_PERIPHERAL(GPIOC_ODR,  10),         //  D26
     BB_PERIPHERAL(GPIOB_ODR,  0),          //  D27       
     BB_PERIPHERAL(GPIOB_ODR,  1),          //  D28        
@@ -427,7 +427,7 @@ typedef unsigned int uint32_t;
     BB_PERIPHERAL(GPIOC_IDR,  14),         //  D22        
     BB_PERIPHERAL(GPIOC_IDR,  15),         //  D23     
     BB_PERIPHERAL(GPIOB_IDR,  9),          //  D24 
-    BB_PERIPHERAL(-1,  -1),                //  D25      	       
+    BB_PERIPHERAL(GPIOD_IDR,  2),          //  D25 	       
     BB_PERIPHERAL(GPIOC_IDR,  10),         //  D26
     BB_PERIPHERAL(GPIOB_IDR,  0),          //  D27       
     BB_PERIPHERAL(GPIOB_IDR,  1),          //  D28        
