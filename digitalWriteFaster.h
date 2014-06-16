@@ -138,8 +138,8 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOB_ODR,  12),          // D2 	        
         BB_PERIPHERAL(GPIOB_ODR,  13),          // D3 	
         BB_PERIPHERAL(GPIOB_ODR,  14),          // D4 
-        BB_PERIPHERAL(-1,  -1),                 // D5                 
-        BB_PERIPHERAL(-1,  -1),                 // D6 button pin         
+        BB_PERIPHERAL(GPIOB_ODR,  15),          // D5                 
+        BB_PERIPHERAL(GPIOG_ODR,  15),          // D6 button pin         
         BB_PERIPHERAL(GPIOC_ODR,  0),           // D7 	
         BB_PERIPHERAL(GPIOC_ODR,  1),           // D8 	
         BB_PERIPHERAL(GPIOC_ODR,  2),           // D9 	
@@ -155,7 +155,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOC_ODR,  12),          // D19 	
         BB_PERIPHERAL(GPIOC_ODR,  13),          // D20 	        
         BB_PERIPHERAL(GPIOC_ODR,  14),          // D21 	   
-        BB_PERIPHERAL(-1,  -1),                 // D22                          
+        BB_PERIPHERAL(GPIOC_ODR,  15),          // D22                          
         BB_PERIPHERAL(GPIOA_ODR,  8),           // D23 	
         BB_PERIPHERAL(GPIOA_ODR,  9),           // D24 	
         BB_PERIPHERAL(GPIOA_ODR,  10),          // D25 	
@@ -194,7 +194,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOD_ODR,  14),          // D58              
         BB_PERIPHERAL(GPIOF_ODR,  1),           // D59 	        
         BB_PERIPHERAL(GPIOD_ODR,  12),          // D60
-        BB_PERIPHERAL(-1,  -1),                 // D61                          
+        BB_PERIPHERAL(GPIOD_ODR,  15),          // D61                          
         BB_PERIPHERAL(GPIOF_ODR,  2),           // D62 
         BB_PERIPHERAL(GPIOD_ODR,  13),          // D63        	        	        	        
         BB_PERIPHERAL(GPIOD_ODR,  0),           // D64
@@ -215,7 +215,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOF_ODR,  14),          // D79 	
         BB_PERIPHERAL(GPIOG_ODR,  9),           // D80
         BB_PERIPHERAL(GPIOE_ODR,  11),          // D81 
-        BB_PERIPHERAL(-1,  -1),                 // D82                                  	
+        BB_PERIPHERAL(GPIOF_ODR,  15),          // D82                                  	
         BB_PERIPHERAL(GPIOG_ODR,  10),          // D83
         BB_PERIPHERAL(GPIOE_ODR,  12),          // D84 
         BB_PERIPHERAL(GPIOG_ODR,  0),           // D85        
@@ -226,7 +226,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOE_ODR,  14),          // D90 	        
         BB_PERIPHERAL(GPIOG_ODR,  2),           // D91 	         
         BB_PERIPHERAL(GPIOE_ODR,  1),           // D92 	
-        BB_PERIPHERAL(-1,  -1),                 // D93                          
+        BB_PERIPHERAL(GPIOE_ODR,  15),          // D93                          
         BB_PERIPHERAL(GPIOG_ODR,  3),           // D94
         BB_PERIPHERAL(GPIOE_ODR,  0),           // D95 	
         BB_PERIPHERAL(GPIOD_ODR,  8),           // D96
@@ -236,7 +236,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOD_ODR,  10),          // D100
         BB_PERIPHERAL(GPIOA_ODR,  13),          // D101 	
         BB_PERIPHERAL(GPIOA_ODR,  14),          // D102 
-        BB_PERIPHERAL(-1,  -1),                 // D103                                 
+        BB_PERIPHERAL(GPIOA_ODR,  15),          // D103 
         BB_PERIPHERAL(GPIOB_ODR,  3),           // D104 	
         BB_PERIPHERAL(GPIOB_ODR,  4)            // D105 	
     };
@@ -248,8 +248,8 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOB_IDR,  12),          // D2 	        
         BB_PERIPHERAL(GPIOB_IDR,  13),          // D3 	
         BB_PERIPHERAL(GPIOB_IDR,  14),          // D4 
-        BB_PERIPHERAL(-1,  -1),                 // D5                 
-        BB_PERIPHERAL(-1,  -1),                 // D6 button pin         
+        BB_PERIPHERAL(GPIOB_IDR,  15),          // D5                 
+        BB_PERIPHERAL(GPIOG_IDR,  15),          // D6 button pin         
         BB_PERIPHERAL(GPIOC_IDR,  0),           // D7 	
         BB_PERIPHERAL(GPIOC_IDR,  1),           // D8 	
         BB_PERIPHERAL(GPIOC_IDR,  2),           // D9 	
@@ -265,7 +265,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOC_IDR,  12),          // D19 	
         BB_PERIPHERAL(GPIOC_IDR,  13),          // D20 	        
         BB_PERIPHERAL(GPIOC_IDR,  14),          // D21 	   
-        BB_PERIPHERAL(-1,  -1),                 // D22                          
+        BB_PERIPHERAL(GPIOC_IDR,  15),          // D22                          
         BB_PERIPHERAL(GPIOA_IDR,  8),           // D23 	
         BB_PERIPHERAL(GPIOA_IDR,  9),           // D24 	
         BB_PERIPHERAL(GPIOA_IDR,  10),          // D25 	
@@ -304,7 +304,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOD_IDR,  14),          // D58              
         BB_PERIPHERAL(GPIOF_IDR,  1),           // D59 	        
         BB_PERIPHERAL(GPIOD_IDR,  12),          // D60
-        BB_PERIPHERAL(-1,  -1),                 // D61                          
+        BB_PERIPHERAL(GPIOD_IDR,  15),          // D61                          
         BB_PERIPHERAL(GPIOF_IDR,  2),           // D62 
         BB_PERIPHERAL(GPIOD_IDR,  13),          // D63        	        	        	        
         BB_PERIPHERAL(GPIOD_IDR,  0),           // D64
@@ -325,7 +325,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOF_IDR,  14),          // D79 	
         BB_PERIPHERAL(GPIOG_IDR,  9),           // D80
         BB_PERIPHERAL(GPIOE_IDR,  11),          // D81 
-        BB_PERIPHERAL(-1,  -1),                 // D82                                  	
+        BB_PERIPHERAL(GPIOF_IDR,  15),          // D82                                  	
         BB_PERIPHERAL(GPIOG_IDR,  10),          // D83
         BB_PERIPHERAL(GPIOE_IDR,  12),          // D84 
         BB_PERIPHERAL(GPIOG_IDR,  0),           // D85        
@@ -336,7 +336,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOE_IDR,  14),          // D90 	        
         BB_PERIPHERAL(GPIOG_IDR,  2),           // D91 	         
         BB_PERIPHERAL(GPIOE_IDR,  1),           // D92 	
-        BB_PERIPHERAL(-1,  -1),                 // D93                          
+        BB_PERIPHERAL(GPIOE_IDR,  15),          // D93                          
         BB_PERIPHERAL(GPIOG_IDR,  3),           // D94
         BB_PERIPHERAL(GPIOE_IDR,  0),           // D95 	
         BB_PERIPHERAL(GPIOD_IDR,  8),           // D96
@@ -346,7 +346,7 @@ typedef unsigned int uint32_t;
         BB_PERIPHERAL(GPIOD_IDR,  10),          // D100
         BB_PERIPHERAL(GPIOA_IDR,  13),          // D101 	
         BB_PERIPHERAL(GPIOA_IDR,  14),          // D102 
-        BB_PERIPHERAL(-1,  -1),                 // D103                                 
+        BB_PERIPHERAL(GPIOA_IDR,  15),          // D103 
         BB_PERIPHERAL(GPIOB_IDR,  3),           // D104 	
         BB_PERIPHERAL(GPIOB_IDR,  4)            // D105 	
     };
